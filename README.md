@@ -1,3 +1,6 @@
+Fork from Eric Terpstra https://github.com/ericterpstra
+Try to deploy on Heroku
+
 # Anagrammatix
 
 A multi-player, multi-screen game built to experiment with Socket.IO and Node.js.
