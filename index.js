@@ -25,11 +25,6 @@ var server = require('http').createServer(app).listen(port);
 
 // Create a Socket.IO server and attach it to the http server
 var io = require('socket.io').listen(server);
-//Heroku won't actually allow us to use WebSocjets, so we have to setup polling instead
-io.configure(function () {
-    io.set("transports", ["xhr-polling"]);
-    io.set("polling duration", 10);
-});
 
 // Reduce the logging output of Socket.IO
 io.set('log level',1);
